@@ -22,15 +22,15 @@ Doubly LinkedList:                                     </br>
 
   Structure of the deck :                              </br> 
       Deck {                                           </br> 
-        top card                                       </br> 
-        bottom card                                    </br> 
-        size of deck                                   </br> 
+        &nbsp&nbsptop card                                       </br> 
+        &nbsp&nbspbottom card                                    </br> 
+        &nbsp&nbspsize of deck                                   </br> 
       }                                                </br> 
   Structure of the card :                              </br> 
       Card {                                           </br>  
-        previous card                                  </br> 
-        next card                                      </br> 
-        value of the card                              </br> 
+        &nbsp&nbspprevious card                                  </br> 
+        &nbsp&nbspnext card                                      </br> 
+        &nbsp&nbspvalue of the card                              </br> 
       }
 
 
