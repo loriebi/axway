@@ -26,7 +26,7 @@ if(numberOfCards === undefined || !Number.isInteger(numberOfCards) || numberOfCa
 
 let shaffleCards = new Shuffling();       // Initialization of Shuffling object
 shaffleCards.initDecks(numberOfCards);    // Initialization of decks
-let rounds = shaffleCards.start();        // start shuffling
+shaffleCards.start();                     // start shuffling
 
 
-console.log(rounds);
+console.log(shaffleCards.rounds);

@@ -1,6 +1,6 @@
 /* ------------------- Structure of Deck (Double - LinkedList) ----------------------------- */
 function Card(value){
-  this.value = value;   // value of card
+  this.value = value;   // value of the card
   this.next = null;     // next card (node)
   this.previous = null;     // previous card (node)
 };
@@ -13,7 +13,7 @@ function Deck(){
 };
 
 
-// adding card on the deck
+// adding card on the top of the deck
 Deck.prototype.add = function(card){
 
   if(this._length){
@@ -77,7 +77,7 @@ function Shuffling(){
 
   this.cards = [];                // all cards
 
-  this.round = 0;                 // number of rounds
+  this.rounds = 0;                 // number of rounds
 
   this.handDeck = new Deck();     // holding deck
 
@@ -109,7 +109,7 @@ Shuffling.prototype.shuffle = function(){
   this.tableDeck.add(this.handDeck.removeTop());
   this.tableDeck.add(this.handDeck.removeTop());
 
-  this.round++;
+  this.rounds++;
 
   this.handDeck = this.tableDeck;    // taking cards from table
   this.tableDeck = new Deck();       // 0 cards on the table
@@ -143,16 +143,15 @@ Shuffling.prototype.start = function(){
 
   // If only 1 card in the deck ==> 1
   if(this.cards.length == 1){
-    return 1;
+    this.rounds++;
+    return;
   }
 
-  // shuffle -> round++ -> check -> shuffle ...
+  // shuffle -> rounds++ -> check -> shuffle ...
   do {
     this.shuffle();
   } while (!this.compareDecks());
 
-
-  return this.round;
 };
 
 
