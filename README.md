@@ -27,10 +27,10 @@ Doubly LinkedList:                                     </br>
         size of deck                                   </br> 
       }                                                </br> 
   Structure of the card :                               
-      Card {                                           </br>  
+      Card {                                             
         pprevious card                                  </br> 
         pnext card                                      </br> 
-        value of the card                              </br> 
+        value of the card                               </br> 
       }
 
 
