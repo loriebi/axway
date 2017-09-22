@@ -20,18 +20,17 @@ Algorithme:                                            </br>
 Doubly LinkedList:                                     </br>
   
 
-  Structure of the deck :
-      Deck {
-        top card
-        bottom card
-        size of deck
-      }
-  Structure of the card :
-      Card{
-        previous card
-        next card
-        value of the card
-
+  Structure of the deck :                              </br> 
+      Deck {                                           </br> 
+        top card                                       </br> 
+        bottom card                                    </br> 
+        size of deck                                   </br> 
+      }                                                </br> 
+  Structure of the card :                              </br> 
+      Card {                                           </br>  
+        previous card                                  </br> 
+        next card                                      </br> 
+        value of the card                              </br> 
       }
 
 
