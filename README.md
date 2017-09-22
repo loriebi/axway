@@ -28,8 +28,8 @@ Doubly LinkedList:                                     </br>
       }                                                </br> 
   Structure of the card :                               
       Card {                                             
-        pprevious card                                  </br> 
-        pnext card                                      </br> 
+        previous card                                  </br> 
+        next card                                      </br> 
         value of the card                               </br> 
       }
 
