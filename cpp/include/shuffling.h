@@ -23,8 +23,8 @@ typedef struct Card Card;
 
 struct Deck{
   int size;                       // size of deck
-  Card *top_card;                 // card on the top of the deck
-  Card *bottom_card;              // card on the bottom of the deck
+  Card* top_card;                 // card on the top of the deck
+  Card* bottom_card;              // card on the bottom of the deck
   Deck();
   void addCardOnTop(Card*);       // adding card on the top of the deck
   Card* removeTopCard();          // removing card from top of the deck

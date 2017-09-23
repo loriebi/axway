@@ -19,6 +19,7 @@ int main(int argc, const char **argv)
 
   int numberOfCards;
 
+  /*-------------------------- checking command line arguments -------------------------*/
   if(argc != 2){
     cout<<"Program takes one integer argument!"<<endl;
     exit(1);
@@ -31,6 +32,7 @@ int main(int argc, const char **argv)
   }
 
 
+  /*-------------------------- shuffling cards -------------------------*/
   Shuffling *shuffling = new Shuffling(numberOfCards);
 
   shuffling->start();

@@ -16,11 +16,11 @@ function Deck(){
 // adding card on the top of the deck
 Deck.prototype.add = function(card){
 
-  if(this._length){
+  if(this._length){                   // length > 0 adding on the top
     this.top_card.next = card;
     card.previous = this.top_card;
     this.top_card = card;
-  }else{
+  }else{                              // length = 0
     this.top_card = card;
     this.bottom_card = card;
   }

@@ -19,6 +19,7 @@ Deck::Deck(){
   bottom_card = NULL;
 }
 
+// adding card on the top of the deck
 void Deck::addCardOnTop(Card* card){
   size++;
 
@@ -33,6 +34,7 @@ void Deck::addCardOnTop(Card* card){
   }
 }
 
+// removing top card of the deck
 Card* Deck::removeTopCard(){
 
   Card *card = top_card;
@@ -57,7 +59,7 @@ Card* Deck::removeTopCard(){
   return card;    //returns old top card
 }
 
-
+// putting top card  on the bottom
 void Deck::putBottom(){
 
   // new bottom card
@@ -79,7 +81,7 @@ void Deck::putBottom(){
 
 /* -------------------------------- Shuffling class ----------------------------------------- */
 
-
+// initialization of Shuffling object
 Shuffling::Shuffling(int numberOfCards){
 
   nCards = numberOfCards;
@@ -89,6 +91,7 @@ Shuffling::Shuffling(int numberOfCards){
   tableDeck = new Deck();
 
   cards = new Card[numberOfCards];
+  // Initialization of cards with values [1 -- numberOfCards]
   for(int i=0;i<numberOfCards;i++){
     cards[i].value = (i+1);
     cards[i].next = NULL;
